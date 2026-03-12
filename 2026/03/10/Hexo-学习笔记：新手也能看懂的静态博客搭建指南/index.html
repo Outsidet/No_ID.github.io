@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Hexo</title>
+  <link rel="stylesheet" href="/css/style.css">
+<meta name="generator" content="Hexo 8.1.1"></head>
+<body>
+  <header class="header" id="siteHeader">
+    <div class="header-inner">
+      <a href="/" class="logo">No ID</a>
+      <nav class="nav-links">
+        <div class="search-btn" id="searchBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          Search Newsroom
+        </div>
+        <div class="topic-btn" id="topicBtn">
+          Select Topic
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+      </nav>
+    </div>
+
+    <div class="topic-dropdown" id="topicDropdown">
+      <div class="topic-grid">
+        
+          <a href="/categories/Python/" class="topic-item">Python</a>
+        
+          <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="topic-item">博客</a>
+        
+          <a href="/categories/%E7%94%9F%E6%B4%BB/" class="topic-item">生活</a>
+        
+          <a href="/categories/AI/" class="topic-item">AI</a>
+        
+          <a href="/categories/%E9%9A%8F%E7%AC%94/" class="topic-item">随笔</a>
+        
+          <a href="/categories/%E6%80%9D%E8%80%83/" class="topic-item">思考</a>
+        
+          <a href="/categories/%E6%88%90%E9%95%BF/" class="topic-item">成长</a>
+        
+          <a href="/categories/%E6%80%9D%E7%BB%B4/" class="topic-item">思维</a>
+        
+      </div>
+    </div>
+  </header>
+
+  <div class="backdrop" id="backdrop"></div>
+  <main class="container">
+    <article class="post-container">
+  <header class="post-header">
+    <h1 class="post-title-main">Hexo 学习笔记：新手也能看懂的静态博客搭建指南</h1>
+    <div class="post-meta">
+      2026年03月10日 · 
+      
+        <a href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <p>Hexo 是一款基于 Node.js 驱动的<strong>快速、简洁且高效</strong>的静态博客框架，依托 Markdown 解析文章，可一键生成静态页面并快速部署至 GitHub、Gitee、Vercel 等平台，凭借轻量、稳定、易扩展的特性，成为个人博客、技术文档搭建的主流选择。本文从环境准备、核心命令到完整发布流程，系统梳理 Hexo 从入门到上线的全流程操作，便于快速上手与日常维护。</p>
+<h3 id="一、前置环境配置"><a href="#一、前置环境配置" class="headerlink" title="一、前置环境配置"></a>一、前置环境配置</h3><p>Hexo 依赖 Node.js 与 Git 运行，需提前完成环境安装：</p>
+<ol>
+<li>安装 <strong>Node.js</strong>（推荐 LTS 长期支持版本，≥12.0）</li>
+<li>安装 <strong>Git</strong> 版本管理工具</li>
+</ol>
+<p>安装完成后，在终端执行以下命令验证环境：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<p>出现对应版本号，说明环境配置成功。</p>
+<h3 id="二、Hexo-安装与项目初始化"><a href="#二、Hexo-安装与项目初始化" class="headerlink" title="二、Hexo 安装与项目初始化"></a>二、Hexo 安装与项目初始化</h3><p>全局安装 Hexo 命令行工具，完成博客项目的初始化与依赖安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 全局安装 Hexo CLI</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看安装版本，验证安装结果</span></span><br><span class="line">hexo -v</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化博客项目（my-blog 可自定义为项目文件夹名称）</span></span><br><span class="line">hexo init my-blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进入项目目录</span></span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装项目所需依赖</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>执行完成后，即可生成一套完整的 Hexo 博客基础结构。</p>
+<h3 id="三、Hexo-核心命令行（常用速查）"><a href="#三、Hexo-核心命令行（常用速查）" class="headerlink" title="三、Hexo 核心命令行（常用速查）"></a>三、Hexo 核心命令行（常用速查）</h3><h4 id="1-内容创作相关命令"><a href="#1-内容创作相关命令" class="headerlink" title="1. 内容创作相关命令"></a>1. 内容创作相关命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新建文章（完整命令：hexo new）</span></span><br><span class="line">hexo n <span class="string">&quot;文章标题&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建独立页面（如 关于、友链、分类页）</span></span><br><span class="line">hexo new page <span class="string">&quot;about&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建草稿（草稿默认不发布，需手动发布）</span></span><br><span class="line">hexo new draft <span class="string">&quot;草稿标题&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-生成与本地预览"><a href="#2-生成与本地预览" class="headerlink" title="2. 生成与本地预览"></a>2. 生成与本地预览</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清理缓存与已生成的静态文件（修改配置、更换主题后必执行）</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态网页文件（完整命令：hexo generate）</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地服务，实时预览（默认地址：http://localhost:4000）</span></span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 常用组合命令：清理 + 生成 + 本地预览</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-部署上线命令"><a href="#3-部署上线命令" class="headerlink" title="3. 部署上线命令"></a>3. 部署上线命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 部署至远程仓库/服务器（需提前配置 _config.yml 部署信息）</span></span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line"><span class="comment"># 一键发布：清理 + 生成 + 部署</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="命令简写对照表"><a href="#命令简写对照表" class="headerlink" title="命令简写对照表"></a>命令简写对照表</h4><table>
+<thead>
+<tr>
+<th align="center">完整命令</th>
+<th align="center">简写</th>
+<th align="center">功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">hexo new</td>
+<td align="center">hexo n</td>
+<td align="center">新建文章</td>
+</tr>
+<tr>
+<td align="center">hexo generate</td>
+<td align="center">hexo g</td>
+<td align="center">生成静态文件</td>
+</tr>
+<tr>
+<td align="center">hexo server</td>
+<td align="center">hexo s</td>
+<td align="center">启动本地预览服务</td>
+</tr>
+<tr>
+<td align="center">hexo deploy</td>
+<td align="center">hexo d</td>
+<td align="center">部署至线上</td>
+</tr>
+<tr>
+<td align="center">hexo clean</td>
+<td align="center">—</td>
+<td align="center">清理缓存与旧文件</td>
+</tr>
+</tbody></table>
+
+  </div>
+</article>
+  </main>
+
+  <div class="search-modal" id="searchModal">
+    <div class="search-top-bar">
+      <div class="logo">No ID</div>
+      
+      <div class="search-close-capsule" id="searchClose">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        Close
+      </div>
+    </div>
+    
+    <div class="search-container">
+      <div class="search-input-wrapper">
+        <svg class="search-icon-large" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="search-input-large" id="searchInput" placeholder="Search Newsroom">
+      </div>
+      <ul class="search-results-large" id="searchResults"></ul>
+    </div>
+  </div>
+
+  <script>
+    // 1. 导航栏滚动毛玻璃效果
+    const siteHeader = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        siteHeader.classList.add('scrolled');
+      } else {
+        siteHeader.classList.remove('scrolled');
+      }
+    });
+
+    // 2. 话题下拉与毛玻璃遮罩交互
+    const topicBtn = document.getElementById('topicBtn');
+    const topicDropdown = document.getElementById('topicDropdown');
+    const backdrop = document.getElementById('backdrop');
+
+    function toggleTopicMenu() {
+      topicDropdown.classList.toggle('active');
+      backdrop.classList.toggle('active');
+    }
+    topicBtn.addEventListener('click', toggleTopicMenu);
+    backdrop.addEventListener('click', toggleTopicMenu);
+
+
+    // 3. 搜索功能交互
+    const searchBtn = document.getElementById('searchBtn');
+    const searchModal = document.getElementById('searchModal');
+    const searchClose = document.getElementById('searchClose');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    let searchData = [];
+
+    // 封装统一的关闭动作
+    function closeSearch() {
+      searchModal.classList.remove('active'); 
+      searchInput.value = ''; 
+      searchResults.innerHTML = '';
+    }
+
+    searchBtn.onclick = () => {
+      searchModal.classList.add('active');
+      setTimeout(() => searchInput.focus(), 100); 
+      if(searchData.length === 0) {
+        fetch('/search.xml')
+          .then(res => res.text())
+          .then(str => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(str, "text/xml");
+            const entries = xmlDoc.getElementsByTagName("entry");
+            for (let i = 0; i < entries.length; i++) {
+              searchData.push({ title: entries[i].getElementsByTagName("title")[0].textContent, url: entries[i].getElementsByTagName("url")[0].textContent });
+            }
+          });
+      }
+    };
+
+    // 触发关闭的情况 1：点击右上角的 Close 按钮
+    searchClose.onclick = closeSearch;
+
+    // 触发关闭的情况 2：点击周围的毛玻璃空白区域
+    searchModal.addEventListener('click', (e) => {
+      // 确保点击的是外层背景或外部容器，而不是点在输入框或链接上
+      if (e.target === searchModal || e.target.classList.contains('search-container')) {
+        closeSearch();
+      }
+    });
+
+    searchInput.oninput = function() {
+      const keyword = this.value.toLowerCase();
+      searchResults.innerHTML = '';
+      if(!keyword) return;
+      const filtered = searchData.filter(item => item.title.toLowerCase().includes(keyword));
+      filtered.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${item.url}">${item.title}</a>`;
+        searchResults.appendChild(li);
+      });
+    };
+  </script>
+</body>
+</html>  
+

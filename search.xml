@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Python 最崩溃的一次：缩进错了，卡了我 20 分钟</title>
+    <url>/2026/03/10/Python%20%E6%9C%80%E5%B4%A9%E6%BA%83%E7%9A%84%E4%B8%80%E6%AC%A1%EF%BC%9A%E7%BC%A9%E8%BF%9B%E9%94%99%E4%BA%86%EF%BC%8C%E5%8D%A1%E4%BA%86%E6%88%91%2020%20%E5%88%86%E9%92%9F/</url>
+    <content><![CDATA[谁懂啊家人们！ 
+写 Python 最崩溃的不是逻辑，是缩进。
+ 明明看着一样，运行就是报错： 
+IndentationError 真的能把人逼疯。
+ 今天一个小脚本卡了我 20 分钟，最后发现只是少了一个空格。 
+ 
+写久了才明白：
+
+代码好不好看，真的很重要
+变量名别偷懒写 a、b、c 
+遇到 Bug 先打印，别瞎猜 
+写注释不是给别人看，是给三个月后的自己看
+
+代码不会骗你，错了就是错了。 
+但改对那一刻，真的很爽。
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo 学习笔记：新手也能看懂的静态博客搭建指南</title>
+    <url>/2026/03/10/Hexo-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9A%E6%96%B0%E6%89%8B%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[Hexo 是一款基于 Node.js 驱动的快速、简洁且高效的静态博客框架，依托 Markdown 解析文章，可一键生成静态页面并快速部署至 GitHub、Gitee、Vercel 等平台，凭借轻量、稳定、易扩展的特性，成为个人博客、技术文档搭建的主流选择。本文从环境准备、核心命令到完整发布流程，系统梳理 Hexo 从入门到上线的全流程操作，便于快速上手与日常维护。
+一、前置环境配置Hexo 依赖 Node.js 与 Git 运行，需提前完成环境安装：
+
+安装 Node.js（推荐 LTS 长期支持版本，≥12.0）
+安装 Git 版本管理工具
+
+安装完成后，在终端执行以下命令验证环境：
+node -vnpm -vgit --version
+
+出现对应版本号，说明环境配置成功。
+二、Hexo 安装与项目初始化全局安装 Hexo 命令行工具，完成博客项目的初始化与依赖安装：
+# 全局安装 Hexo CLInpm install -g hexo-cli# 查看安装版本，验证安装结果hexo -v# 初始化博客项目（my-blog 可自定义为项目文件夹名称）hexo init my-blog# 进入项目目录cd my-blog# 安装项目所需依赖npm install
+
+执行完成后，即可生成一套完整的 Hexo 博客基础结构。
+三、Hexo 核心命令行（常用速查）1. 内容创作相关命令# 新建文章（完整命令：hexo new）hexo n &quot;文章标题&quot;# 新建独立页面（如 关于、友链、分类页）hexo new page &quot;about&quot;# 新建草稿（草稿默认不发布，需手动发布）hexo new draft &quot;草稿标题&quot;
+
+2. 生成与本地预览# 清理缓存与已生成的静态文件（修改配置、更换主题后必执行）hexo clean# 生成静态网页文件（完整命令：hexo generate）hexo g# 启动本地服务，实时预览（默认地址：http://localhost:4000）hexo s# 常用组合命令：清理 + 生成 + 本地预览hexo clean &amp;&amp; hexo g &amp;&amp; hexo s
+
+3. 部署上线命令# 部署至远程仓库/服务器（需提前配置 _config.yml 部署信息）hexo d# 一键发布：清理 + 生成 + 部署hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
+
+
+
+命令简写对照表
+
+
+完整命令
+简写
+功能说明
+
+
+
+hexo new
+hexo n
+新建文章
+
+
+hexo generate
+hexo g
+生成静态文件
+
+
+hexo server
+hexo s
+启动本地预览服务
+
+
+hexo deploy
+hexo d
+部署至线上
+
+
+hexo clean
+—
+清理缓存与旧文件
+
+
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>成年人的安静：不是孤独，是选择</title>
+    <url>/2023/06/06/%E6%88%90%E5%B9%B4%E4%BA%BA%E7%9A%84%E5%AE%89%E9%9D%99%EF%BC%9A%E4%B8%8D%E6%98%AF%E5%AD%A4%E7%8B%AC%EF%BC%8C%E6%98%AF%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[越来越喜欢安静的状态。 
+不是不合群，而是明白了： 
+无效社交不会带来人脉， 
+过度表达不会带来理解， 
+热闹之后，往往是更大的空虚。 
+成年人最顶级的自由， 是可以安心独处，专注自己的节奏。 
+读书、写代码、整理思路、陪伴重要的人。 
+安静不是消极，是一种更清醒、更克制的生活方式。
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>使用 Google Gemini 半年：AI 工具的正确打开方式</title>
+    <url>/2026/01/06/%E4%BD%BF%E7%94%A8%20Google%20Gemini%20%E5%8D%8A%E5%B9%B4%EF%BC%9AAI%20%E5%B7%A5%E5%85%B7%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[ 
+我现在几乎每天都会用 Gemini 辅助 Python 开发： 
+生成脚本、解释报错、梳理逻辑、优化代码、批量处理文本。
+ 但越用越清醒： 
+
+AI 不能替你思考 
+AI 给出的代码必须校验 
+AI 不理解业务，只有人理解 -
+真正值钱的，是判断力与结构能力
+
+工具只会放大你的能力，而不是凭空创造能力。 
+保持学习，保持判断，比依赖工具更重要。
+]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>搭建 Hexo 踩坑总结：权限、路径与部署的真实经验</title>
+    <url>/2026/03/10/%E6%90%AD%E5%BB%BA%20Hexo%20%E8%B8%A9%E5%9D%91%E6%80%BB%E7%BB%93%EF%BC%9A%E6%9D%83%E9%99%90%E3%80%81%E8%B7%AF%E5%BE%84%E4%B8%8E%E9%83%A8%E7%BD%B2%E7%9A%84%E7%9C%9F%E5%AE%9E%E7%BB%8F%E9%AA%8C/</url>
+    <content><![CDATA[
+这次搭建博客，几乎把常见问题全部踩了一遍：Git 克隆失败、权限不足、目录无法创建、图片路径异常、部署后样式丢失。
+很多问题看似复杂，本质都是两点：路径不对，权限不够。
+成熟一点的经验是：
+
+不要在磁盘根目录直接操作项目
+不要用管理员权限强行解决所有问题
+出现错误先看日志，而不是盲目搜索
+保持目录结构干净，比主题花哨更重要
+
+工具是为内容服务的。稳定、简洁、可长期维护，比什么都重要。
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>学习不必快，但要持续</title>
+    <url>/2026/02/10/%E5%AD%A6%E4%B9%A0%E4%B8%8D%E5%BF%85%E5%BF%AB%EF%BC%8C%E4%BD%86%E8%A6%81%E6%8C%81%E7%BB%AD/</url>
+    <content><![CDATA[
+很多人焦虑，是因为总想“速成”。 
+但技术、认知、经验，全都有一个共同特点：无法速成。 
+我学 全栈 的节奏一直很普通： 
+
+每天写一点 
+遇到问题解决问题 
+不懂就查，不硬撑 
+把重要的东西记下来，形成自己的体系
+
+真正拉开差距的， 
+不是某一天的爆发， 
+而是日复一日的不中断。 
+慢慢来，其实是最快的路。
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>信息爆炸的时代，保持清醒比什么都重要</title>
+    <url>/2026/01/22/%E4%BF%A1%E6%81%AF%E7%88%86%E7%82%B8%E7%9A%84%E6%97%B6%E4%BB%A3%EF%BC%8C%E4%BF%9D%E6%8C%81%E6%B8%85%E9%86%92%E6%AF%94%E4%BB%80%E4%B9%88%E9%83%BD%E9%87%8D%E8%A6%81/</url>
+    <content><![CDATA[现在最不缺的是信息，最缺的是判断。
+ 热点每天都有，情绪随时被点燃，
+ 但大多数事情，我们看到的只是片段，不是全貌。
+越成熟越懂得： 
+
+不轻易站队 
+不随意评价 
+不被情绪带着走 
+不把碎片信息当真相
+
+保持沉默、保持观察、保持独立思考。 
+清醒，是一个人最顶级的定力。
+
+]]></content>
+      <categories>
+        <category>思考</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>普通人的成长，都是沉默且坚定的</title>
+    <url>/2026/03/01/%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E6%88%90%E9%95%BF%EF%BC%8C%E9%83%BD%E6%98%AF%E6%B2%89%E9%BB%98%E4%B8%94%E5%9D%9A%E5%AE%9A%E7%9A%84/</url>
+    <content><![CDATA[我从来不是天赋型的人。 
+没有一学就会，没有一点就通，所有进步都是慢慢熬出来的。 
+别人娱乐的时候，我在学习； 
+别人懈怠的时候，我在坚持； 
+别人看不见的时候，我在一点点提升。 
+
+大多数人的光芒， 
+不是突然爆发， 
+而是长期沉默积累的结果。 
+不必炫耀，不必焦虑， 
+你只管 quietly strong，时间会给你答案。
+]]></content>
+      <categories>
+        <category>成长</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>深耕实干践初心 护航发展启新城</title>
+    <url>/2026/03/10/%E6%B7%B1%E8%80%95%E5%AE%9E%E5%B9%B2%E8%B7%B5%E5%88%9D%E5%BF%83-%E6%8A%A4%E8%88%AA%E5%8F%91%E5%B1%95%E5%90%AF%E6%96%B0%E5%9F%8E/</url>
+    <content><![CDATA[时代浪潮奔涌向前，社会发展蹄疾步稳，每一步跨越都离不开脚踏实地的耕耘，每一份成果都凝聚着责任与担当。
+立足岗位，践行使命，
+既是践行初心的必然要求，
+也是护航社会高质量发展的应有之义。
+聚焦发展痛点，筑牢民生根基。
+社会发展的核心是为民，唯有把群众期盼放在心上，把民生实事落到实处，才能让发展更有温度。
+立足本职，主动倾听群众诉求，聚焦就业、教育、医疗、养老等重点领域，用心解决群众急难愁盼问题，补齐民生短板，让发展成果更多更公平惠及全体人民，凝聚起推动社会进步的强大合力。
+坚守责任担当，主动履职尽责。
+面对社会发展中的新问题、新挑战，始终保持昂扬向上的奋斗姿态，
+立足岗位深耕细作，
+既要吃透政策精神，
+精准落实各项部署，
+也要勇于创新突破，破解发展难题。
+既要当好政策的执行者、推动者，也要当好群众的服务员、贴心人，以实干作风推动各项工作落地见效。
+秉持初心使命，护航时代前行。
+社会发展没有终点，履职尽责永无止境。
+始终坚守初心，牢记使命，
+把个人行动融入社会发展大局，以坚定的信念、务实的作风、有力的举措，扎根岗位、实干笃行，
+既要守护好社会发展的成果，
+也要为社会进步注入源源不断的动力，
+助力社会在高质量发展的道路上稳步前行，
+书写新时代发展的崭新篇章。
+]]></content>
+      <categories>
+        <category>成长</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客开篇：关于记录，关于长期主义</title>
+    <url>/2026/03/09/%E5%8D%9A%E5%AE%A2%E5%BC%80%E7%AF%87%EF%BC%9A%E5%85%B3%E4%BA%8E%E8%AE%B0%E5%BD%95%EF%BC%8C%E5%85%B3%E4%BA%8E%E9%95%BF%E6%9C%9F%E4%B8%BB%E4%B9%89/</url>
+    <content><![CDATA[终于把这个小空间搭建完成。 
+不是为了成为谁，也不是为了流量与关注，只是越来越确信一件事： 人需要一个地方，安静地整理自己。 
+工作越久越明白，情绪会过期，经验会模糊，只有文字能把瞬间变成长期。 这里会写技术、写工具、写思考、写生活里那些沉默但重要的东西。 
+不喧哗，不浮躁，只做真实的记录。
+ 如果你恰好路过，很高兴在这里遇见你。
+]]></content>
+      <categories>
+        <category>思考</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>编程教给我的：把复杂问题拆小</title>
+    <url>/2026/02/06/%E7%BC%96%E7%A8%8B%E6%95%99%E7%BB%99%E6%88%91%E7%9A%84%EF%BC%9A%E6%8A%8A%E5%A4%8D%E6%9D%82%E9%97%AE%E9%A2%98%E6%8B%86%E5%B0%8F/</url>
+    <content><![CDATA[写代码久了，会自然形成一种思维方式： 
+拆解问题。 
+Bug 很大 → 分段定位 
+需求复杂 → 拆分模块 
+项目庞大 → 分步实现 
+这套逻辑放在生活里同样有效： 
+情绪崩溃、目标遥远、事情杂乱， 
+都可以拆成一件一件能动手的小事。 情绪解决不了问题，逻辑可以。 
+稳定的思路，比一时的热情更可靠。
+]]></content>
+      <categories>
+        <category>思维</category>
+      </categories>
+  </entry>
+</search>
