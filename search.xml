@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Python 最崩溃的一次：缩进错了，卡了我 20 分钟</title>
-    <url>/2026/03/10/Python%20%E6%9C%80%E5%B4%A9%E6%BA%83%E7%9A%84%E4%B8%80%E6%AC%A1%EF%BC%9A%E7%BC%A9%E8%BF%9B%E9%94%99%E4%BA%86%EF%BC%8C%E5%8D%A1%E4%BA%86%E6%88%91%2020%20%E5%88%86%E9%92%9F/</url>
-    <content><![CDATA[谁懂啊家人们！ 
-写 Python 最崩溃的不是逻辑，是缩进。
- 明明看着一样，运行就是报错： 
-IndentationError 真的能把人逼疯。
- 今天一个小脚本卡了我 20 分钟，最后发现只是少了一个空格。 
- 
-写久了才明白：
-
-代码好不好看，真的很重要
-变量名别偷懒写 a、b、c 
-遇到 Bug 先打印，别瞎猜 
-写注释不是给别人看，是给三个月后的自己看
-
-代码不会骗你，错了就是错了。 
-但改对那一刻，真的很爽。
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo 学习笔记：新手也能看懂的静态博客搭建指南</title>
     <url>/2026/03/10/Hexo-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%9A%E6%96%B0%E6%89%8B%E4%B9%9F%E8%83%BD%E7%9C%8B%E6%87%82%E7%9A%84%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[Hexo 是一款基于 Node.js 驱动的快速、简洁且高效的静态博客框架，依托 Markdown 解析文章，可一键生成静态页面并快速部署至 GitHub、Gitee、Vercel 等平台，凭借轻量、稳定、易扩展的特性，成为个人博客、技术文档搭建的主流选择。本文从环境准备、核心命令到完整发布流程，系统梳理 Hexo 从入门到上线的全流程操作，便于快速上手与日常维护。
@@ -88,19 +65,60 @@ hexo clean
       </categories>
   </entry>
   <entry>
-    <title>成年人的安静：不是孤独，是选择</title>
-    <url>/2023/06/06/%E6%88%90%E5%B9%B4%E4%BA%BA%E7%9A%84%E5%AE%89%E9%9D%99%EF%BC%9A%E4%B8%8D%E6%98%AF%E5%AD%A4%E7%8B%AC%EF%BC%8C%E6%98%AF%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[越来越喜欢安静的状态。 
-不是不合群，而是明白了： 
-无效社交不会带来人脉， 
-过度表达不会带来理解， 
-热闹之后，往往是更大的空虚。 
-成年人最顶级的自由， 是可以安心独处，专注自己的节奏。 
-读书、写代码、整理思路、陪伴重要的人。 
-安静不是消极，是一种更清醒、更克制的生活方式。
+    <title>博客开篇：关于记录，关于长期主义</title>
+    <url>/2026/03/09/%E5%8D%9A%E5%AE%A2%E5%BC%80%E7%AF%87%EF%BC%9A%E5%85%B3%E4%BA%8E%E8%AE%B0%E5%BD%95%EF%BC%8C%E5%85%B3%E4%BA%8E%E9%95%BF%E6%9C%9F%E4%B8%BB%E4%B9%89/</url>
+    <content><![CDATA[终于把这个小空间搭建完成。 
+不是为了成为谁，也不是为了流量与关注，只是越来越确信一件事： 人需要一个地方，安静地整理自己。 
+工作越久越明白，情绪会过期，经验会模糊，只有文字能把瞬间变成长期。 这里会写技术、写工具、写思考、写生活里那些沉默但重要的东西。 
+不喧哗，不浮躁，只做真实的记录。
+ 如果你恰好路过，很高兴在这里遇见你。
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>思考</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Python 最崩溃的一次：缩进错了，卡了我 20 分钟</title>
+    <url>/2026/03/10/Python%20%E6%9C%80%E5%B4%A9%E6%BA%83%E7%9A%84%E4%B8%80%E6%AC%A1%EF%BC%9A%E7%BC%A9%E8%BF%9B%E9%94%99%E4%BA%86%EF%BC%8C%E5%8D%A1%E4%BA%86%E6%88%91%2020%20%E5%88%86%E9%92%9F/</url>
+    <content><![CDATA[谁懂啊家人们！ 
+写 Python 最崩溃的不是逻辑，是缩进。
+ 明明看着一样，运行就是报错： 
+IndentationError 真的能把人逼疯。
+ 今天一个小脚本卡了我 20 分钟，最后发现只是少了一个空格。 
+ 
+写久了才明白：
+
+代码好不好看，真的很重要
+变量名别偷懒写 a、b、c 
+遇到 Bug 先打印，别瞎猜 
+写注释不是给别人看，是给三个月后的自己看
+
+代码不会骗你，错了就是错了。 
+但改对那一刻，真的很爽。
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>信息爆炸的时代，保持清醒比什么都重要</title>
+    <url>/2026/01/22/%E4%BF%A1%E6%81%AF%E7%88%86%E7%82%B8%E7%9A%84%E6%97%B6%E4%BB%A3%EF%BC%8C%E4%BF%9D%E6%8C%81%E6%B8%85%E9%86%92%E6%AF%94%E4%BB%80%E4%B9%88%E9%83%BD%E9%87%8D%E8%A6%81/</url>
+    <content><![CDATA[现在最不缺的是信息，最缺的是判断。
+ 热点每天都有，情绪随时被点燃，
+ 但大多数事情，我们看到的只是片段，不是全貌。
+越成熟越懂得： 
+
+不轻易站队 
+不随意评价 
+不被情绪带着走 
+不把碎片信息当真相
+
+保持沉默、保持观察、保持独立思考。 
+清醒，是一个人最顶级的定力。
+
+]]></content>
+      <categories>
+        <category>思考</category>
       </categories>
   </entry>
   <entry>
@@ -143,65 +161,19 @@ AI 不理解业务，只有人理解 -
       </categories>
   </entry>
   <entry>
-    <title>学习不必快，但要持续</title>
-    <url>/2026/02/10/%E5%AD%A6%E4%B9%A0%E4%B8%8D%E5%BF%85%E5%BF%AB%EF%BC%8C%E4%BD%86%E8%A6%81%E6%8C%81%E7%BB%AD/</url>
-    <content><![CDATA[
-很多人焦虑，是因为总想“速成”。 
-但技术、认知、经验，全都有一个共同特点：无法速成。 
-我学 全栈 的节奏一直很普通： 
-
-每天写一点 
-遇到问题解决问题 
-不懂就查，不硬撑 
-把重要的东西记下来，形成自己的体系
-
-真正拉开差距的， 
-不是某一天的爆发， 
-而是日复一日的不中断。 
-慢慢来，其实是最快的路。
+    <title>成年人的安静：不是孤独，是选择</title>
+    <url>/2023/06/06/%E6%88%90%E5%B9%B4%E4%BA%BA%E7%9A%84%E5%AE%89%E9%9D%99%EF%BC%9A%E4%B8%8D%E6%98%AF%E5%AD%A4%E7%8B%AC%EF%BC%8C%E6%98%AF%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[越来越喜欢安静的状态。 
+不是不合群，而是明白了： 
+无效社交不会带来人脉， 
+过度表达不会带来理解， 
+热闹之后，往往是更大的空虚。 
+成年人最顶级的自由， 是可以安心独处，专注自己的节奏。 
+读书、写代码、整理思路、陪伴重要的人。 
+安静不是消极，是一种更清醒、更克制的生活方式。
 ]]></content>
       <categories>
-        <category>随笔</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>信息爆炸的时代，保持清醒比什么都重要</title>
-    <url>/2026/01/22/%E4%BF%A1%E6%81%AF%E7%88%86%E7%82%B8%E7%9A%84%E6%97%B6%E4%BB%A3%EF%BC%8C%E4%BF%9D%E6%8C%81%E6%B8%85%E9%86%92%E6%AF%94%E4%BB%80%E4%B9%88%E9%83%BD%E9%87%8D%E8%A6%81/</url>
-    <content><![CDATA[现在最不缺的是信息，最缺的是判断。
- 热点每天都有，情绪随时被点燃，
- 但大多数事情，我们看到的只是片段，不是全貌。
-越成熟越懂得： 
-
-不轻易站队 
-不随意评价 
-不被情绪带着走 
-不把碎片信息当真相
-
-保持沉默、保持观察、保持独立思考。 
-清醒，是一个人最顶级的定力。
-
-]]></content>
-      <categories>
-        <category>思考</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>普通人的成长，都是沉默且坚定的</title>
-    <url>/2026/03/01/%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E6%88%90%E9%95%BF%EF%BC%8C%E9%83%BD%E6%98%AF%E6%B2%89%E9%BB%98%E4%B8%94%E5%9D%9A%E5%AE%9A%E7%9A%84/</url>
-    <content><![CDATA[我从来不是天赋型的人。 
-没有一学就会，没有一点就通，所有进步都是慢慢熬出来的。 
-别人娱乐的时候，我在学习； 
-别人懈怠的时候，我在坚持； 
-别人看不见的时候，我在一点点提升。 
-
-大多数人的光芒， 
-不是突然爆发， 
-而是长期沉默积累的结果。 
-不必炫耀，不必焦虑， 
-你只管 quietly strong，时间会给你答案。
-]]></content>
-      <categories>
-        <category>成长</category>
+        <category>生活</category>
       </categories>
   </entry>
   <entry>
@@ -235,16 +207,25 @@ AI 不理解业务，只有人理解 -
       </categories>
   </entry>
   <entry>
-    <title>博客开篇：关于记录，关于长期主义</title>
-    <url>/2026/03/09/%E5%8D%9A%E5%AE%A2%E5%BC%80%E7%AF%87%EF%BC%9A%E5%85%B3%E4%BA%8E%E8%AE%B0%E5%BD%95%EF%BC%8C%E5%85%B3%E4%BA%8E%E9%95%BF%E6%9C%9F%E4%B8%BB%E4%B9%89/</url>
-    <content><![CDATA[终于把这个小空间搭建完成。 
-不是为了成为谁，也不是为了流量与关注，只是越来越确信一件事： 人需要一个地方，安静地整理自己。 
-工作越久越明白，情绪会过期，经验会模糊，只有文字能把瞬间变成长期。 这里会写技术、写工具、写思考、写生活里那些沉默但重要的东西。 
-不喧哗，不浮躁，只做真实的记录。
- 如果你恰好路过，很高兴在这里遇见你。
+    <title>学习不必快，但要持续</title>
+    <url>/2026/02/10/%E5%AD%A6%E4%B9%A0%E4%B8%8D%E5%BF%85%E5%BF%AB%EF%BC%8C%E4%BD%86%E8%A6%81%E6%8C%81%E7%BB%AD/</url>
+    <content><![CDATA[
+很多人焦虑，是因为总想“速成”。 
+但技术、认知、经验，全都有一个共同特点：无法速成。 
+我学 全栈 的节奏一直很普通： 
+
+每天写一点 
+遇到问题解决问题 
+不懂就查，不硬撑 
+把重要的东西记下来，形成自己的体系
+
+真正拉开差距的， 
+不是某一天的爆发， 
+而是日复一日的不中断。 
+慢慢来，其实是最快的路。
 ]]></content>
       <categories>
-        <category>思考</category>
+        <category>随笔</category>
       </categories>
   </entry>
   <entry>
@@ -262,6 +243,25 @@ Bug 很大 → 分段定位
 ]]></content>
       <categories>
         <category>思维</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>普通人的成长，都是沉默且坚定的</title>
+    <url>/2026/03/01/%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E6%88%90%E9%95%BF%EF%BC%8C%E9%83%BD%E6%98%AF%E6%B2%89%E9%BB%98%E4%B8%94%E5%9D%9A%E5%AE%9A%E7%9A%84/</url>
+    <content><![CDATA[我从来不是天赋型的人。 
+没有一学就会，没有一点就通，所有进步都是慢慢熬出来的。 
+别人娱乐的时候，我在学习； 
+别人懈怠的时候，我在坚持； 
+别人看不见的时候，我在一点点提升。 
+
+大多数人的光芒， 
+不是突然爆发， 
+而是长期沉默积累的结果。 
+不必炫耀，不必焦虑， 
+你只管 quietly strong，时间会给你答案。
+]]></content>
+      <categories>
+        <category>成长</category>
       </categories>
   </entry>
 </search>
